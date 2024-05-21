@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <FORM METHOD="GET" ACTION="zaglushka.html">
+    <h1>Виберіть колір фону
+    </h1>
+   <Select name="Color" id="colorSelector">
+        <Option value="red">Червоний</Option>
+        <Option value="yellow">Жовтий</Option>
+        <Option value="gray">Сірий</Option>
+    </Select>
+   </FORM>
+        <script>
+            document.getElementById('colorSelector').addEventListener('change', function () {
+                document.body.style.backgroundColor = this.value;
+            });
+        </script>
+
+
+   
+</body>
+</html>
+<HTML>
